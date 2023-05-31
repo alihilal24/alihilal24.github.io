@@ -2,5 +2,6 @@
 
 This is a personal project where I develop my personal website
 
-Domain: [alihilal.me](www.alihilal.me)
-Active Status: ```diff  -Inactive ```
+Domain: [alihilal.me](www.alihilal.me) 
+
+Website Status: ```diff  - Inactive ```
