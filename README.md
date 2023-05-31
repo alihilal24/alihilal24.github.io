@@ -2,6 +2,6 @@
 
 This is a personal project where I develop my personal website
 
-Domain: [alihilal.me](www.alihilal.me) 
+Domain: [alihilal.me](https://www.alihilal.me) 
 
 Website Status: ```Inactive```
