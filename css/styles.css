@@ -1,5 +1,100 @@
 @charset "UTF-8";
 
+:root{
+  --title-text: #fff4e6;
+  --subtitle-text: #ccc3b8;
+  --body-text: #99928a;
+  --dark-background: #362a2a;
+  --darker-background: #1e1717;
+  --darkest-background: #060404;
+  scroll-behavior: smooth;
+}
+
+.page-design{
+  background-color: var(--darkest-background);
+  color: var(--body-text);
+  font-family: Lato;  
+}
+
+#page-top::-webkit-scrollbar {
+  width: 20px;
+}
+
+#page-top::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* #page-top::-webkit-scrollbar-thumb {
+  background-image: url('https://i.ibb.co/1RHr40z/248599.png'); 
+  background-repeat: no-repeat, no-repeat;
+  background-size: 20px;
+} */
+
+.navbar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 15px;
+	float: left;
+  width: 100%;
+  background-color: var(--darkest-background);
+  transition: top 0.5s;
+}
+
+.name-link{
+  float: left;
+  color: var(--title-text);
+  font-size: 30px;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.navbar-items{
+  list-style: none;
+  float: right;
+  margin-right: 50px;
+}
+
+.navbar-item{
+  float: left;
+  margin: 0 30px;
+}
+
+.navbar-item a {
+  display:inline-block;
+  color: var(--subtitle-text);
+  font-size: 15px;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  
+}
+
+/* Change the link color to #111 (black) on hover */
+.navbar-item a:hover {
+  background-color: var(--darker-background);
+  border-radius: 5px;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+.big-name-title{
+  font-size: 80px;
+  font-family: Arial , Helvetica, sans-serif;
+  font-stretch: ultra-expanded;
+  font-weight: 1000;
+  color: var(--title-text);
+}
+.big-description{
+  font-size: 25px;
+  font-weight: 300;
+  color: var(--title-text);
+}
+
 .container,
 .container-fluid,
 .container-xxl,
@@ -14,14 +109,27 @@
   margin-left: auto;
 }
 
+.masthead-display{
+  display: flex;
+  text-align: center;
+}
+
+.masthead{
+  height: 100vh;
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .link {
   position: relative;
-  color: var(--bs-white);
+  color: var(--title-text);
   text-decoration: none;
 }
 
 .link:hover {
-  color: var(--bs-white);
+  color: var(--title-text);
 }
 
 
@@ -33,18 +141,13 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: var(--bs-white);
+  background-color: var(--title-text);
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
 
 .link:hover::before {
   transform: scaleX(1);
-}
-
-.masthead-display{
-  display: flex;
-  text-align: center;
 }
 
 
