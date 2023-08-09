@@ -33,6 +33,7 @@
 .section-title{
   color: var(--subtitle-text);
   font-size: 30px;
+  text-align: center;
 }
 .section-text{
   color: var(--body-text);
@@ -154,7 +155,7 @@
 .link::before {
   content: "";
   position: absolute;
-  display: block;
+  display: flex;
   width: 100%;
   height: 2px;
   bottom: 0;
@@ -169,8 +170,9 @@
 }
 
 .about-section{
-  height: 75vh;
+  height: auto;
   max-width: 800px;
+  padding: 10% 0%;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -178,28 +180,204 @@
 }
 
 .experience-section{
-  height: 75vh;
-  max-width: 800px;
+  height: auto;
+  padding: 10% 0%;
+  max-width: 1000px;
   margin: auto;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
 }
+
+
+
+.experience-tabs {
+  float: left;
+  
+  background-color: transparent;
+  border: transparent;
+  outline: transparent;
+}
+
+/* Style the buttons that are used to open the tab content */
+.experience-tabs button {
+  align-items: center;
+  justify-content: center;
+  background-color: inherit;
+  color: var(--subtitle-text);
+  font-size: 15px;
+  text-align: center;
+  padding: 15px;
+  margin: 15px 0px;
+  width: 100%;
+  border-radius: 5px;
+  border: transparent;
+  outline: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.experience-tabs button:hover {
+  background-color: var(--dark-background);
+  border: transparent;
+  outline: transparent;
+}
+
+/* Create an active/current "tab button" class */
+.experience-tabs button.active {
+  background-color: var(--dark-background);
+  border: transparent;
+  outline: transparent;
+}
+
+/* Style the tab content */
+.experience-tab-content {
+  float: right;
+  padding: 0px 12px;
+  width: 60%;
+  border-left: none;
+}
+
+
 
 .projects-section{
-  height: 75vh;
+  height: auto;
+  padding: 10% 0%;
   max-width: 800px;
   margin: auto;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
 }
 
+
+
+.text-left-pic-right{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: grid;
+  column-gap: 20px;
+  margin-left: -150px;
+}
+
+.projects-text-left{
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.projects-text-left p{
+  margin: 10px;
+}
+
+.projects-text-left h3{
+  color: var(--subtitle-text);
+}
+
+.project-picture-right{
+  grid-column: 2;
+  grid-row: 1;
+  }
+
+.project-picture-right a{
+  text-decoration: none;
+  grid-column: 2;
+  color: transparent;
+  transition: 0.25s;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-picture-right a:hover{
+  color: var(--body-text);
+  opacity: 100%;
+  transition: 0.25s;
+}
+
+.project-picture-right img{
+  max-width: 350px;
+  height: auto;
+  opacity: 50%;
+  transition: 0.4s;
+  filter: brightness(90%) saturate(0%) sepia(100%);
+  transition: 0.4s;
+}
+
+.project-picture-right img:hover{
+  opacity: 100%;
+  transition: 0.4s;
+  filter: none;
+  transition: 0.4s;
+}
+
+
+
+
+.text-right-pic-left{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: grid;
+  column-gap: 20px;
+  margin-right: -150px;
+}
+
+.projects-text-right{
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.projects-text-right p{
+  margin: 10px;
+}
+
+.projects-text-right h3{
+  color: var(--subtitle-text);
+}
+
+.project-picture-left{
+  grid-column: 1;
+  grid-row: 1;
+  }
+
+.project-picture-left a{
+  text-decoration: none;
+  grid-column: 1;
+  color: transparent;
+  transition: 0.25s;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-picture-left a:hover{
+  color: var(--body-text);
+  opacity: 100%;
+  transition: 0.25s;
+}
+
+.project-picture-left img{
+  max-width: 350px;
+  height: auto;
+  opacity: 50%;
+  transition: 0.4s;
+  filter: brightness(90%) saturate(0%) sepia(100%);
+  transition: 0.4s;
+}
+
+.project-picture-left img:hover{
+  opacity: 100%;
+  transition: 0.4s;
+  filter: none;
+  transition: 0.4s;
+}
+
+
+
 .contact-section{
-  height: 75vh;
+  height: auto;
+  padding: 10% 0%;
   max-width: 800px;
   margin: auto;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
 }

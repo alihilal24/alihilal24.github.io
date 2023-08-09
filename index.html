@@ -74,51 +74,52 @@
         </section>
         <!-- Experience-->
         <section class="experience-section" id="experience">
-            <div class="container">
-                <h2 class="text-white mb-5">Experience</h2>
+            <div class="tab-container">
+                <h2 class="section-title">Work Experience</h2>
                 
                         <!-- Tab Links-->
                         <div class="experience-tabs">
-                            <button class="experience-tab-button" >Shifamed</button>
-                            <button class="experience-tab-button" >linedanceAI</button>
-                            <button class="experience-tab-button" >Sapphire Fitness</button>
+                            <button class="experience-tab-button" onclick="openCity(event, 'linedanceAI')">linedanceAI</button>
+                            <button class="experience-tab-button" onclick="openCity(event, 'Shifamed')">Shifamed</button>
+                            <button class="experience-tab-button" onclick="openCity(event, 'Sapphire Fitness')">Sapphire Fitness</button>
                         </div>
                         <!-- Tab Content-->
                         <div>
                             <div id="linedanceAI" class="experience-tab-content">
                                 <h3>Frontend Software Developer</h3>
-                                <h4>July 2022 – Present</h4>
+                                <h4>July 2022 - Present</h4>
                                 <ul>
                                     <li>Utilized WPF-UI framework and a MVVM design pattern to build a user-friendly software application</li>
-                                    <li>Advanced my programming and design skills quickly to have substantial impact on the design and functionality of the product</li>
-                                    <li>Implemented efficient and memory-conscious source code for software, reducing memory consumption by more than 50%</li>
-                                    <li>Adapted to an Agile workflow, boosting work productivity with weekly standup meetings</li>
+                                    <li>Advanced my programming and design skills quickly, creating design mockups on Figma and on paper, translating those ideas to custom, interactive elements using Microsoft Blend and XAML, while integrating each element using C# to ViewModels to display real-time patient data accurately</li>
+                                    <li>Implemented efficient and memory-conscious source code by implementing Disposing functions of Models and ViewModels, as well as finding and patching memory leaks, reducing memory consumption by more than 50%</li>
+                                    <li>Adapted to an Agile workflow, boosting work productivity with weekly standups and punctual sprint completion</li>
                                     <li>Developed new features, components, and functionalities for the application, such as custom data visualization elements, that significantly enhanced the value proposition</li>
                                 </ul>
-                                <h3>Machine Learning Internship</h3>
-                                <h4> July 2022 – August 2022</h4>
+                                <h3>Algorithm Testing Internship</h3>
+                                <h4> July 2022 - August 2022</h4>
                                 <ul>
-                                    <li>Improved the video uploading process to increase testing efficiency by more than 500%</li>
-                                    <li>Analyzed and documented results of movement smoothing and evaluation algorithms</li>
-                                    <li>Enhanced existing algorithms, achieving an analysis accuracy of 92% </li>
+                                    <li>Analyzed and documented results of smoothing and movement evaluation algorithms from uploaded movement video</li>
+                                    <li>Improved video uploading process by writing Python scripts that automated the video selection and conversion to JPEG process, tripling the work and testing efficiency of my entire team</li>
+                                    <li>Studied source-code and algorithms to engage with technical team on possible improvements to speed of calculations</li>
                                 </ul>
                             </div>
                             <div id="Shifamed" class="experience-tab-content">
-                                <h3>Software Development Engineering Internship</h3>
-                                <h4>May 2021 – August 2021</h4>
+                                <h3>Fullstack Development Internship</h3>
+                                <h4>May 2021 - August 2021</h4>
                                 <ul>
-                                    <li>Built user focused functionality, attached medical documents which are auto integrated in final reports </li>
-                                    <li>Secured multiple business deals after presenting our functionality to the CEO and various business partners </li>
+                                    <li>Built and improved User-Interface functionality, allowing the attachment of medical documents, which then are auto-integrated in final medical reports and legally binding contracts for the convenience of our customers</li>
+                                    <li>Analyzed and debugged HelloSign API integration bug that prevented customer variable fields that were created on our website from appearing on the HelloSign API service</li>
+                                    <li>Presented product design and application to CEO and business clients, facilitating the closure of multiple business deals </li>
                                     <li>Coincided with a team of developers in Ukraine to enhance the user experience of customers</li>
                                 </ul>
 
                             </div>
                             <div id="Sapphire Fitness" class="experience-tab-content">
-                                <h3>Software Engineering Internship</h3>
-                                <h4>January 2021 – August 2021</h4>
+                                <h3>Software Development Internship</h3>
+                                <h4>January 2021 - August 2021</h4>
                                 <ul>
-                                    <li>Integrated an Intel Real-sense D455 camera to utilize its depth capturing software on the Raspberry Pi </li>
-                                    <li>Supported development team responsible for reproducing existing software on a Raspberry Pi for commercial use </li>
+                                    <li>Integrated an Intel Real-sense D455 camera to utilize its depth capturing software on the Raspberry Pi, opening doors to explore adding new features such as Repetition Counting and Exercise Form Correction</li>
+                                    <li>Supported development team responsible for reproducing existing software on a Raspberry Pi for commercial use</li>
                                 </ul>
                             </div>
                         </div>
@@ -128,64 +129,105 @@
         <!-- Projects-->
         <section class="projects-section" id="projects">
             <div class="container">
-                <h2>Projects</h2>                
+                <h2 class="section-title">Projects</h2>                
                 <!-- Project One Row-->
-                <div >
-                    <div >
-                        <div >
-                            <div >
-                                <div >
-                                    <h4 >Movality User-Interface</h4>
-                                    <p >Played a pivotal role in designing and implementing the user interface of the desktop application Movality for linedanceAI. </p>
-                                    <ul>
-                                        <li>Microsoft .NET</li>
-                                        <li>Windows Presentation Foundation (WPF)</li>
-                                        <li>Model, View, View-Model Architecture (MVVM)</li>
-                                        <li>C#, XAML</li>
-                                    </ul>
+                
+                                <div class="text-left-pic-right">
+                                    <div class="projects-text-left">
+                                        <h3 >Movality User-Interface</h3>
+                                        <p >Played a pivotal role in designing and creating the desktop application Movality for LinedanceAI. This application runs on a .NET framework and is structured primarily on an MVVM architecture. Additionally, Service-Oriented architecture, Dependency Injection, and Asynchronous Programming were implemented</p>
+                                        <ul>
+                                            <li>Microsoft .NET</li>
+                                            <li>Windows Presentation Foundation (WPF)</li>
+                                            <li>Model, View, View-Model Architecture (MVVM)</li>
+                                            <li>C#, XAML</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="project-picture-right">
+                                        <a target="_blank" href="https://www.linedanceai.com/"><img src="assets/linedanceAI.JPG" alt="linedanceAI Logo"><br> &#128279 Go to linedanceAI.com</a>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                            
                 <!-- Project Two Row-->
-                <div >
-                    <div >
-                        <div >
-                            <div >
-                                <div >
-                                    <h4 >Personal Website</h4>
-                                    <p >Designed and programmed this website to explore web development technologies. </p>
+                
+                                <div class="text-right-pic-left">
+                                    <div class="projects-text-right">
+                                        <h3 >Personal Website</h3>
+                                    <p >Working on an ongoing project to create and update this website to demonstrate understanding of web application development.
+                                        Additionally, created custom elements, functionality, and API integration to create a fully immersive and interactive UI experience.</p>
                                     <ul>
                                         <li>JavaScript</li>
                                         <li>HTML</li>
                                         <li>CSS</li>
                                     </ul>
                                 </div>
+
+                                    <div class="project-picture-left">
+                                        <a target="_blank" href="https://github.com/alihilal24/PersonalWebsite"><img src="assets/Website.JPG" alt="Website Pic"><br> &#128279 Go to Github Repository</a>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
+                           
                 <!-- Project Three Row-->
-                <div >
-                    <div >
-                        <div >
-                            <div >
-                                <div >
-                                    <h4 >Eliminating Business Impact of Software Issues in Production</h4>
-                                    <p >Played a crtical role in my team project to automate the prevention of software issues in production environments through SafeDeploy.
-                                         We aimed to achieve this by analyzing network data, extracting relevant metrics from Pixie, an open-source tool, and developing visualizations to effectively display potential software issues and provide a general overview for monitoring purposes.</p>
-                                    <ul>
+                
+                                <div class="text-left-pic-right">
+                                    <div class="projects-text-left">
+                                        <h3 >Eliminating Business Impact of Software Issues in Production</h3>
+                                    <p>Collaborated with a team to automate preventative measures to prevent software issues from reaching production environments by developing a system that monitors networks for potential issues using an open-source called Pixie.
+                                        My main role was to collect stack traces from program execution and utilized visualization methods to display potential software issues.
+                                        </p>
+                                        <ul>
                                         <li>Pixie</li>
                                         <li>Python</li>
                                         <li>Google Cloud</li>
                                         <li>Jupyter</li>
                                     </ul>
+                                    </div>
+                                    <div class="project-picture-right">
+                                       <a target="_blank" href="https://github.com/alihilal24/Safedeploy-Pixie-Project"><img src="assets/SafeDeploy.JPG" alt="SafeDeply Pic"><br> &#128279 Go to Github Repository</a>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                          
+                <!-- Project Four Row-->
+               
+                                <div class="text-right-pic-left">
+                                    <div class="projects-text-right">
+
+                                    <h3 >Multithreading Movie Theater Simulation</h3>
+                                    <p>This project represents my exploration of multithreading concepts. 
+                                         I delved into the realms of concurrency versus parallelism, various thread states, and the intricacies of thread synchronization. 
+                                         Simultaneously, I crafted a movie theater simulator that emulates tasks like managing the movie ticket counter, overseeing the snack bar, and simulating the passage of time during movie screenings.
+                                        </p>
+                                        <ul>
+                                        <li>Java</li>
+                                        <li>VS Code</li>
+                                    </ul>
+                                    </div>
+                                    <div class="project-picture-left">
+                                    <a target="_blank" href="https://github.com/alihilal24/Multithreading-Movie-Theater-Project"><img src="assets/Multithreading.JPG" alt="Multithreading Visual"><br> &#128279 Go to Github Repository</a>
+                                    </div>
+                                </div>
+                          
+                <!-- Project Five Row-->
+                
+                                <div class="text-left-pic-right">
+                                    <div class="projects-text-left">
+                                    <h3 >Exploring Regression and Classification</h3>
+                                    <p>
+                                        Within this project, I dived into Classification and Regression concepts. 
+                                        My exploration involved the manipulation of substantial volumes of data extracted from two distinct datasets: the WHO Suicide Statistics and the Stellar Classification Data Set - SDSS17. 
+                                        Employing a range of techniques for data cleansing and presentation, I harnessed a diverse array of models, including Linear Regression Models, k-Nearest-Neighbor (kNN) algorithm, Support Vector Machine (SVM), and Decision Trees.
+                                    </p>
+                                        <ul>
+                                        <li>R</li>
+                                        <li>R Studio</li>
+                                    </ul>
+                                    </div>
+                                    <div class="project-picture-right">
+                                    <a target="_blank" href="https://github.com/alihilal24/Classification-and-Regression-in-R"><img src="assets/RegvsClass.JPG" alt="Regression vs Classification Pic"><br> &#128279 Go to Github Repository</a>
+                                    </div>
+                                </div>
+                        
         </section>
         <!-- Contact-->
         <section class="contact-section" id="contact">
