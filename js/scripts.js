@@ -31,10 +31,6 @@ function openCity(evt, companyName) {
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
-  if (companyName == "") {
-    document.getElementById("linedanceAI").style.display = "block";
-  evt.currentTarget.className += " active";
-  }
   
   // Show the current tab, and add an "active" class to the link that opened the tab
   document.getElementById(companyName).style.display = "block";

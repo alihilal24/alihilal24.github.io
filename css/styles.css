@@ -2,11 +2,11 @@
 
 :root{
   --title-text: #fff4e6;
-  --subtitle-text: #ccc3b8;
-  --body-text: #99928a;
+  --subtitle-text: #e0dedb;
+  --body-text: #b7b2ad;
   --dark-background: #362a2a;
-  --darker-background: #1e1717;
-  --darkest-background: #060404;
+  --darker-background: #2b2121;
+  --darkest-background: #1b1515;
   scroll-behavior: smooth;
 }
 
@@ -16,7 +16,7 @@
   font-family: Lato;  
 }
 
-#page-top::-webkit-scrollbar {
+/* #page-top::-webkit-scrollbar {
   width: 20px;
 }
 
@@ -24,7 +24,7 @@
   background-color: transparent;
 }
 
-/* #page-top::-webkit-scrollbar-thumb {
+#page-top::-webkit-scrollbar-thumb {
   background-image: url('https://i.ibb.co/1RHr40z/248599.png'); 
   background-repeat: no-repeat, no-repeat;
   background-size: 20px;
@@ -397,6 +397,7 @@
   padding: 10px;
   background-color: transparent;
   color: var(--body-text);
+  font-size: 15px;
   outline: none;
   border: none;
   border-bottom: 1px solid var(--body-text);
@@ -406,6 +407,7 @@
   border: none;
   outline: none;
   color: var(--body-text);
+  font-size: 15px;
 }
 
 .one-line-input:focus{  
@@ -421,6 +423,7 @@
   border: none;
   border-bottom: 1px solid var(--body-text);
   font-family: Lato;
+  font-size: 15px;
 }
 
 .multi-line-input::placeholder{
@@ -428,6 +431,7 @@
   outline: none;
   color: var(--body-text);
   font-family: Lato;
+  font-size: 15px;
 }
 
 .multi-line-input:focus{  
@@ -439,6 +443,7 @@
   background-color: transparent;
   border: 2px solid var(--body-text);
   border-radius: 10px;
+  font-size: 15px;
   color: var(--body-text);
   background: linear-gradient(to left, transparent 50%, var(--body-text) 50%) right;
   background-size: 200%;
