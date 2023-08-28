@@ -16,28 +16,14 @@
   font-family: Lato;  
 }
 
-/* #page-top::-webkit-scrollbar {
-  width: 20px;
-}
-
-#page-top::-webkit-scrollbar-track {
-  background-color: transparent;
-}
-
-#page-top::-webkit-scrollbar-thumb {
-  background-image: url('https://i.ibb.co/1RHr40z/248599.png'); 
-  background-repeat: no-repeat, no-repeat;
-  background-size: 20px;
-} */
-
 .section-title{
   color: var(--subtitle-text);
-  font-size: 30px;
+  font-size: 35px;
   text-align: center;
 }
 .section-text{
   color: var(--body-text);
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
 }
 .tech-stack-bullets{
@@ -51,13 +37,14 @@
 
 .navbar{
   position: fixed;
+  z-index: 1;
   top: 0;
   right: 0;
   left: 0;
   padding: 15px;
 	float: left;
   width: 100%;
-  background-color: var(--darkest-background);
+  background: var(--darkest-background);
   transition: top 0.5s;
 }
 
@@ -84,26 +71,23 @@
 .navbar-item a {
   display:inline-block;
   color: var(--subtitle-text);
-  font-size: 15px;
+  font-size: 20px;
   text-align: center;
   padding: 15px;
   text-decoration: none;
-  
+  border-radius: 10px;
+  background: linear-gradient(to left, transparent 50%, var(--darker-background) 50%) right;
+  background-size: 200%;
+  transition: .5s ease-out;
 }
 
 /* Change the link color to #111 (black) on hover */
 .navbar-item a:hover {
-  background-color: var(--darker-background);
-  border-radius: 5px;
-}
-
-.active {
-  background-color: #4CAF50;
+  background-position: left;
 }
 
 .big-name-title{
-  font-size: 80px;
-  font-family: Arial , Helvetica, sans-serif;
+  font-size: 100px;
   font-stretch: ultra-expanded;
   font-weight: 1000;
   color: var(--title-text);
@@ -124,8 +108,12 @@
   width: 100%;
   padding-right: var(--bs-gutter-x, 0.75rem);
   padding-left: var(--bs-gutter-x, 0.75rem);
+  padding-top: var(--bs-gutter-x, 0.75rem);
+  padding-bottom: var(--bs-gutter-x, 0.75rem);
   margin-right: auto;
   margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .masthead-display{
@@ -172,7 +160,7 @@
 .about-section{
   height: auto;
   max-width: 800px;
-  padding: 10% 0%;
+  padding: 15vh 0vh;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -180,70 +168,77 @@
 }
 
 .experience-section{
-  height: auto;
-  padding: 10% 0%;
-  max-width: 1000px;
-  margin: auto;
+  min-height: 750px;
+  padding: 15vh 0vh;
   display: grid;
+  grid-template-rows: min-content;
   justify-content: center;
-  align-items: center;
+  align-items:first baseline;
 }
 
 
 
-.experience-tabs {
-  float: left;
-  
+.tab-container {
   background-color: transparent;
-  border: transparent;
-  outline: transparent;
+  border: 0px transparent;
+  outline: 0px transparent;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 750px;
+  margin: 20px ;
 }
 
-/* Style the buttons that are used to open the tab content */
-.experience-tabs button {
-  align-items: center;
-  justify-content: center;
-  background-color: inherit;
-  color: var(--subtitle-text);
-  font-size: 15px;
-  text-align: center;
-  padding: 15px;
-  margin: 15px 0px;
-  width: 100%;
-  border-radius: 5px;
-  border: transparent;
-  outline: transparent;
-  cursor: pointer;
-  transition: 0.3s;
+.tab-container input[type="radio"]{
+  display: none;
 }
 
-/* Change background color of buttons on hover */
-.experience-tabs button:hover {
-  background-color: var(--dark-background);
-  border: transparent;
-  outline: transparent;
+.tab-container label{
+  padding: 20px;
+  height: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0px;
+  border-radius: 10px;
+  font-size: 20px;
+  background: linear-gradient(to left, var(--darkest-background) 50%, var(--darker-background) 50%) right;
+  background-size: 200%;
+  transition: .5s ease-out;
 }
 
-/* Create an active/current "tab button" class */
-.experience-tabs button.active {
-  background-color: var(--dark-background);
-  border: transparent;
-  outline: transparent;
+.tab-container label:hover{
+  background: linear-gradient(to right, var(--darker-background) 50%, var(--darkest-background) 50%) left;
+  background-size: 200%;
+  transition: .5s ease-out;
 }
 
-/* Style the tab content */
-.experience-tab-content {
-  float: right;
-  padding: 0px 12px;
-  width: 60%;
-  border-left: none;
+
+.tab-container .tab{
+  order: 1;
+  margin-bottom: auto;
+  display: none;
 }
 
+.tab-container input[type="radio"]:checked + label + .tab{
+  display: block;
+}
+
+.tab-container input[type="radio"]:checked + label{
+  background: var(--darker-background);
+}
+
+.tab-container h3{
+  font-size: 30px;
+}
+.tab-container h4{
+  font-size: 22px;
+  font-style: italic;
+  margin-top: -20px;
+}
 
 
 .projects-section{
   height: auto;
-  padding: 10% 0%;
+  padding: 15vh 0vh;
   max-width: 800px;
   margin: auto;
   display: grid;
@@ -264,6 +259,8 @@
 .projects-text-left{
   grid-column: 1;
   grid-row: 1;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .projects-text-left p{
@@ -277,6 +274,8 @@
 .project-picture-right{
   grid-column: 2;
   grid-row: 1;
+  margin-top: auto;
+  margin-bottom: auto;
   }
 
 .project-picture-right a{
@@ -297,6 +296,7 @@
 .project-picture-right img{
   max-width: 350px;
   height: auto;
+  
   opacity: 50%;
   transition: 0.4s;
   filter: brightness(90%) saturate(0%) sepia(100%);
@@ -324,6 +324,8 @@
 .projects-text-right{
   grid-column: 2;
   grid-row: 1;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .projects-text-right p{
@@ -337,6 +339,8 @@
 .project-picture-left{
   grid-column: 1;
   grid-row: 1;
+  margin-top: auto;
+  margin-bottom: auto;
   }
 
 .project-picture-left a{
@@ -374,7 +378,7 @@
 
 .contact-section{
   height: auto;
-  padding: 10% 0%;
+  padding: 20vh 0vh;
   max-width: 800px;
   margin: auto;
   display: grid;
