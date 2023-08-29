@@ -3,6 +3,14 @@
 // Scripts
 // 
 
+const splash = document.querySelector(".splash-page-container");
+
+document.addEventListener("DOMContentLoaded", (e)=>{
+  setTimeout(()=>{
+    splash.classList.add("display-none");
+  }, 3700);
+})
+
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
