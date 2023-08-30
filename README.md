@@ -7,4 +7,4 @@ Link: [Ali Hilal](https://alihilal24.github.io/)
 Website Status: ```Active```
 
 Projects Used:
-- [Tyoed JS](https://github.com/mattboldt/typed.js)
+- [Typed JS](https://github.com/mattboldt/typed.js)
