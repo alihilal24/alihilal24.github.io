@@ -17,33 +17,30 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top" class="page-design">
+
         <!-- Splash Page -->
 
-            <div class="splash-page-container container">
-                <!-- 
-                <h1 class="fade-in">Ali Hilal</h1>
-            -->
-                
-                <h1 class="big-name-title"><span class="auto-type"></span></h1>
+        <div class="splash-page-container fade-out">
+            <div class="splash-title"> 
+                <h1 class="big-name-title" style="margin-bottom: 220px;"><span class="auto-type"></span></h1>
                 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
                 
                 <script>
                     var typed = new Typed(".auto-type", {
-                        strings: ["Ali Hilal"],
-                        typeSpeed: 150,
+                        strings: ["", "Welcome to...", "",  "Ali Hilal"],
+                        typeSpeed: 130,
+                        backSpeed: 50,
                         loop: false
                     })
                 </script> 
-                
             </div>
-                
-<div class="fade-in">
-
+        </div>           
+        
+        <div>
         <!-- Navigation-->
         <nav class="navbar" id="mainNav">
             <div class="container ">
                 <a class="name-link" href="#page-top">Ali Hilal</a>
-                
                 <div  id="navbarResponsive">
                     <ul class="navbar-items">
                         <li class="navbar-item" ><a class="nav-link" href="#about">About Me</a></li>
@@ -65,8 +62,7 @@
                              My skills lay in UX/UI design and Frontend Development, contributing to corporate and start-up projects.
                               Currently, I am focused on building an interactive desktop UI for
                             <a class="link" target="_blank" href="https://www.linedanceai.com/"> <b> LinedanceAI</b> </a>
-                        </h2>
-                        
+                        </h2>       
                     </div>
                 </div>
             </div>
@@ -90,7 +86,6 @@
                                 <li>C#, XAML, Python</li>
                                 <li>JavaScript, HTML, CSS</li>
                             </ul>
-
                     </div>
                 </div>
             </div>
@@ -98,30 +93,28 @@
         <!-- Experience-->
         <section class="experience-section" id="experience">
             <h2 class="section-title">Work Experience</h2>
-            
             <div class="tab-container">
-                    <input type="radio" id="linedanceAI-tab" name="my-experience-tabs" checked="checked">
+                <input type="radio" id="linedanceAI-tab" name="my-experience-tabs" checked="checked">
                     <label for="linedanceAI-tab">LinedanceAI</label>
                         <div class="tab">
                             <h3>Frontend Software Developer</h3>
-                                        <h4>July 2022 - Present</h4>
-                                        <ul class="section-text">
-                                            <li>Utilized WPF-UI framework and a MVVM design pattern to build a user-friendly software application</li>
-                                            <li>Advanced my programming and design skills quickly, creating design mockups on Figma and on paper, translating those ideas to custom, interactive elements using Microsoft Blend and XAML, while integrating each element using C# to ViewModels to display real-time patient data accurately</li>
-                                            <li>Implemented efficient and memory-conscious source code by implementing Disposing functions of Models and ViewModels, as well as finding and patching memory leaks, reducing memory consumption by more than 50%</li>
-                                            <li>Adapted to an Agile workflow, boosting work productivity with weekly standups and punctual sprint completion</li>
-                                            <li>Developed new features, components, and functionalities for the application, such as custom data visualization elements, that significantly enhanced the value proposition</li>
-                                        </ul>
-                                        <h3>Algorithm Testing Internship</h3>
-                                        <h4> July 2022 - August 2022</h4>
-                                        <ul class="section-text">
-                                            <li>Analyzed and documented results of smoothing and movement evaluation algorithms from uploaded movement video</li>
-                                            <li>Improved video uploading process by writing Python scripts that automated the video selection and conversion to JPEG process, tripling the work and testing efficiency of my entire team</li>
-                                            <li>Studied source-code and algorithms to engage with technical team on possible improvements to speed of calculations</li>
-                                        </ul>     
+                            <h4>July 2022 - Present</h4>
+                            <ul class="section-text">
+                                <li>Utilized WPF-UI framework and a MVVM design pattern to build a user-friendly software application</li>
+                                <li>Advanced my programming and design skills quickly, creating design mockups on Figma and on paper, translating those ideas to custom, interactive elements using Microsoft Blend and XAML, while integrating each element using C# to ViewModels to display real-time patient data accurately</li>
+                                <li>Implemented efficient and memory-conscious source code by implementing Disposing functions of Models and ViewModels, as well as finding and patching memory leaks, reducing memory consumption by more than 50%</li>
+                                <li>Adapted to an Agile workflow, boosting work productivity with weekly standups and punctual sprint completion</li>
+                                <li>Developed new features, components, and functionalities for the application, such as custom data visualization elements, that significantly enhanced the value proposition</li>
+                            </ul>
+                            <h3>Algorithm Testing Internship</h3>
+                            <h4> July 2022 - August 2022</h4>
+                            <ul class="section-text">
+                                <li>Analyzed and documented results of smoothing and movement evaluation algorithms from uploaded movement video</li>
+                                <li>Improved video uploading process by writing Python scripts that automated the video selection and conversion to JPEG process, tripling the work and testing efficiency of my entire team</li>
+                                <li>Studied source-code and algorithms to engage with technical team on possible improvements to speed of calculations</li>
+                            </ul>     
                         </div>
-
-                    <input type="radio" id="shifamed-tab" name="my-experience-tabs">
+                <input type="radio" id="shifamed-tab" name="my-experience-tabs">
                     <label for="shifamed-tab">Shifamed</label>
                         <div class="tab">
                             <h3>Fullstack Development Internship</h3>
@@ -198,7 +191,7 @@
                                     <p class="section-text">Collaborated with a team to automate preventative measures to prevent software issues from reaching production environments by developing a system that monitors networks for potential issues using an open-source called Pixie.
                                         My main role was to collect stack traces from program execution and utilized visualization methods to display potential software issues.
                                         </p>
-                                        <ul class="section-text">
+                                    <ul class="section-text">
                                         <li>Pixie</li>
                                         <li>Python</li>
                                         <li>Google Cloud</li>

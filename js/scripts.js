@@ -3,12 +3,12 @@
 // Scripts
 // 
 
-const splash = document.querySelector(".splash-page-container");
+const pageScroll = document.querySelector(".page-design");
 
 document.addEventListener("DOMContentLoaded", (e)=>{
   setTimeout(()=>{
-    splash.classList.add("display-none");
-  }, 3700);
+    pageScroll.classList.add("unlock-scroll");
+  }, 10000);
 })
 
 var prevScrollpos = window.pageYOffset;
@@ -25,8 +25,6 @@ window.onscroll = function() {
 function openCity(evt, companyName) {
   // Declare all variables
   var i, tabcontent, tablinks;
-
-  
   
   // Get all elements with class="experience-tab-content" and hide them
   tabcontent = document.getElementsByClassName("experience-tab-content");
